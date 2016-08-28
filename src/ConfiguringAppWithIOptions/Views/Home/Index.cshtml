@@ -1,0 +1,27 @@
+﻿@model ConfiguringAppWithIOptions.Models.IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Owner</h2>
+        <ul>
+            <li><strong>Account:</strong> @Model.Owner.Account</li>
+            <li><strong>DisplayName:</strong> @Model.Owner.DisplayName</li>
+            <li><strong>Email:</strong> @Model.Owner.Email</li>
+        </ul>
+    </div>
+    <div class="col-md-2">
+        <h2>Website</h2>
+        <ul>
+            <li><strong>Domain:</strong> @Model.Website.Domain</li>
+        </ul>
+    </div>
+    <div class="col-md-7">
+        <h2>ConnectionString</h2>
+        <ul>
+            <li><strong>DefaultConnection:</strong> @Model.ConnectionString.DefaultConnection</li>
+        </ul>
+    </div>
+</div>
