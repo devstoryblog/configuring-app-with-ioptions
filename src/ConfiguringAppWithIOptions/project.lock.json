@@ -3804,6 +3804,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "YamlDotNet/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/dotnet/YamlDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/YamlDotNet.dll": {}
+        }
       }
     }
   },
@@ -9874,6 +9883,24 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "YamlDotNet/4.0.0": {
+      "sha512": "52GDvCKc/qjw1DlMhIMHoYsxCu4UxiGFU769wDLrddNb9KtUxkJ3jKUD9oUlFN+CCmpvFxMeZQYerKQrlVELWg==",
+      "type": "package",
+      "path": "YamlDotNet/4.0.0",
+      "files": [
+        "YamlDotNet.4.0.0.nupkg.sha512",
+        "YamlDotNet.nuspec",
+        "lib/dotnet/YamlDotNet.dll",
+        "lib/dotnet/YamlDotNet.pdb",
+        "lib/dotnet/YamlDotNet.xml",
+        "lib/net35/YamlDotNet.dll",
+        "lib/net35/YamlDotNet.pdb",
+        "lib/net35/YamlDotNet.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/YamlDotNet.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/YamlDotNet.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/YamlDotNet.xml"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -9891,7 +9918,8 @@
       "Microsoft.Extensions.Logging.Debug >= 1.0.0",
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 1.0.0",
       "Microsoft.NETCore.App >= 1.0.0",
-      "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0"
+      "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0",
+      "YamlDotNet >= 4.0.0"
     ],
     ".NETCoreApp,Version=v1.0": []
   },

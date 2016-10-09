@@ -9,5 +9,7 @@ namespace ConfiguringAppWithIOptions.Models
         public WebsiteOptions Website { get; set; }
 
         public ConnectionStringOptions ConnectionString { get; set; }
+
+        public YamlDataOptions YamlData { get; set; }
     }
 }

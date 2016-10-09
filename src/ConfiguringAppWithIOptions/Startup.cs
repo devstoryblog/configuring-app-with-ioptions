@@ -13,7 +13,8 @@ namespace ConfiguringAppWithIOptions
         {
             IConfigurationBuilder builder = new ConfigurationBuilder()
                     .SetBasePath(env.ContentRootPath)
-                    .AddJsonFile("appsettings.json", true, true);
+                    .AddJsonFile("appsettings.json", true, true)
+                    .AddYamlFile("config.yml");
             Configuration = builder.Build();
         }
 
@@ -33,6 +34,8 @@ namespace ConfiguringAppWithIOptions
             services.Configure<WebsiteOptions>(Configuration);
 
             services.Configure<ConnectionStringOptions>(Configuration.GetSection("ConnectionStrings"));
+
+            services.Configure<YamlDataOptions>(Configuration);
 
             services.AddMvc();
         }
